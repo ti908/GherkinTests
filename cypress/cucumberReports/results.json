@@ -1,0 +1,375 @@
+[
+  {
+    "description": "    This End-End test suite is designed to analyse and test all significant functionality of the provided online shop",
+    "elements": [
+      {
+        "description": "",
+        "id": "e2e-use-cases-validation;lockeduser-test-flow",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "LockedUser Test Flow",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I land on the shop login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I enter my details in the fields provided and click the login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 678000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Validate the error messages",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "e2e-use-cases-validation;incorrectuser-test-flow",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "IncorrectUser Test Flow",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I visit the shop login page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I enter invalid details in the fields provided and click the login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 548000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Validate the error messages received",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "e2e-use-cases-validation",
+    "line": 4,
+    "keyword": "Feature",
+    "name": "E2E Use cases validation",
+    "tags": [],
+    "uri": "cypress/integration/examples/BDD/LockedUser.feature"
+  },
+  {
+    "description": "    This End-End test suite is designed to analyse and test all significant functionality of the provided online shop",
+    "elements": [
+      {
+        "description": "",
+        "id": "e2e-use-cases-validation;performanceguser-test-flow",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "PerformanceGUser Test Flow",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I land on the shop login page and Login successfully",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6817000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I sort the items and I click the cart after adding items add items to cart",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5697000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter valid information",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Validate the total prices and verify Thank you message",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "e2e-use-cases-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "e2e Use cases validation",
+    "tags": [],
+    "uri": "cypress/integration/examples/BDD/PerformanceGUser.feature"
+  },
+  {
+    "description": "    This End-End test suite is designed to analyse and test all significant functionality of the provided online shop",
+    "elements": [
+      {
+        "description": "",
+        "id": "e2e-use-cases-validation;problemuser-test-flow",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "ProblemUser Test Flow",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I land on the shop login page and Login successfully",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sort the items and I click the cart after adding items add items to cart",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 744000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I attempt to enter valid information details",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 715000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "e2e-use-cases-validation",
+    "line": 4,
+    "keyword": "Feature",
+    "name": "e2e Use cases validation",
+    "tags": [],
+    "uri": "cypress/integration/examples/BDD/ProblemUser.feature"
+  },
+  {
+    "description": "    This End-End test suite is designed to analyse and test all significant functionality of the provided online shop",
+    "elements": [
+      {
+        "description": "",
+        "id": "end-end-use-cases-validation;standard_user-test-flow",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Standard_user Test Flow",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I land on the shop login page and Login successfully",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1734000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I sort the items and I click the cart after adding items add items to cart",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 816000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I enter invalid information",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I enter valid information",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 708000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Validate the total prices and verify Thank you message",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "end-end-use-cases-validation",
+    "line": 4,
+    "keyword": "Feature",
+    "name": "End-End Use cases validation",
+    "tags": [],
+    "uri": "cypress/integration/examples/BDD/StandardUser.feature"
+  }
+]
