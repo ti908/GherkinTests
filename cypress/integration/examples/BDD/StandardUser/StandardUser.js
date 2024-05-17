@@ -10,7 +10,7 @@ const checkoutData = require ('../../../../fixtures/checkOutData.json')
 const FormPage = new formPage();
 const ProductPage = new productPage();
 const CheckoutPage = new checkoutPage();
-const CheckoutOverview = new checkoutOverview
+const CheckoutOverview = new checkoutOverview();
 
 Before(() => {
     // This hook will be executed before all scenarios.

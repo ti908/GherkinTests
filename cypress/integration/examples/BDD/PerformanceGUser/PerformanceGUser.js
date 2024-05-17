@@ -3,12 +3,14 @@ import { Before } from '@badeball/cypress-cucumber-preprocessor';
 import { formPage } from "../../../../support/selectors/formPage";
 import { productPage } from "../../../../support/selectors/productPage";
 import { checkoutPage } from "../../../../support/selectors/checkoutPage";
+import { checkoutOverview } from "../../../../support/selectors/checkOutOverview";
 const userDetail = require ('../../../../fixtures/userDetail.json')
 const productData = require ('../../../../fixtures/productData.json')
 const checkoutData = require ('../../../../fixtures/checkOutData.json')
 const FormPage = new formPage();
 const ProductPage = new productPage();
 const CheckoutPage = new checkoutPage();
+const CheckoutOverview = new checkoutOverview
 
 Before(() => {
     // This hook will be executed before all scenarios.
@@ -17,13 +19,11 @@ Before(() => {
 
   Given('I land on the shop login page and Login successfully', () => {
     cy.visit(Cypress.env('url'))
-    //,{failOnStatusCode: false}
     FormPage.getUsername().type(userDetail.username4).then($el => FormPage.assertInputField($el, userDetail.username4))
     FormPage.getPassword().type(userDetail.password).then($el => FormPage.assertInputField($el, userDetail.password))
     FormPage.getLoginBtn().click()
 })
 When('I sort the items and I click the cart after adding items add items to cart', () => {
-    //let index = 0
     cy.get('.title').should('have.text', 'Products')
     ProductPage.sortDropdown().select(productData.ZA);
     Cypress.config('defaultCommandTimeout',8000)
@@ -42,7 +42,6 @@ When('I sort the items and I click the cart after adding items add items to cart
 })
 
 When('I enter valid information', () => {
-    let index = 0
     CheckoutPage.getFirstName().type(checkoutData.firstname).then($el => CheckoutPage.assertInputField($el, checkoutData.firstname))
     CheckoutPage.getLastName().type(checkoutData.lastname).then($el => CheckoutPage.assertInputField($el, checkoutData.lastname))
     CheckoutPage.getZipCode().type(checkoutData.ZipCode).then($el => CheckoutPage.assertInputField($el, checkoutData.ZipCode))
@@ -69,8 +68,8 @@ Then('Validate the total prices and verify Thank you message', () => {
           expect(Number(total)).to.equal(sum)
        }) 
         cy.contains('Finish').click()
-        cy.get('.complete-header').should('have.text','Thank you for your order!')
-        cy.get('.complete-text').should('include.text','Your order has been dispatched')
+        CheckoutOverview.getHeader().should('have.text','Thank you for your order!')
+        CheckoutOverview.getDes().should('include.text','Your order has been dispatched')
 })
 
 
